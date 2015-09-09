@@ -14,20 +14,20 @@ app.get('/:operator/:var1/:var2', function (req,res){
 
   if(operator == "add")
   {
-    result = parseInt(varOne) + parseInt(varTwo);
+    result = parseFloat(varOne) + parseFloat(varTwo);
   }
   else if(operator == "subtract")
   {
-    result = parseInt(varOne) - parseInt(varTwo);
+    result = parseFloat(varOne) - parseFloat(varTwo);
 
   }
   else if(operator == "mult")
   {
-    result = parseInt(varOne) * parseInt(varTwo);
+    result = parseFloat(varOne) * parseFloat(varTwo);
   }
   else if(operator == "div")
   {
-    result = parseInt(varOne) + parseInt(varTwo);
+    result = parseFloat(varOne) + parseFloat(varTwo);
   }
   else
   {
