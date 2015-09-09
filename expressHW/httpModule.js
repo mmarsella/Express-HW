@@ -3,11 +3,9 @@
 // the same array. When the second request is finished, console.log the array with the data. Callbacks!!!
 
 var http = require('http');
-
 var array = [];
 
 // make a request
-
 http.get("http://omdbapi.com/?i=tt0241527", function (res){
   res.setEncoding("utf8");
   res.on("data",function(data){
@@ -25,13 +23,11 @@ http.get("http://omdbapi.com/?i=tt0241527", function (res){
           });
           // Once the first request is finished, make another request to "http://omdbapi.com/?i=tt0295297" 
           res.on("end", function(){
-            console.log(array);
+          console.log(array);
           });
 
         });
-
   });
-
 });
 
 
